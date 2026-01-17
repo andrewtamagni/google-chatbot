@@ -1,4 +1,4 @@
-# Google Chat Bot with Multiple AI Providers
+# google-chatbot
 
 > ⚠️ **WORK IN PROGRESS - UNDER ACTIVE DEVELOPMENT** ⚠️
 > 

@@ -80,11 +80,11 @@ function onMessage(event) {
     }
     
     // Clean the message text: remove bot mentions and trim whitespace
-    // Bot mentions come in format like "<@users/1234567890>" or "@EIP-CHAT" and should be removed
+    // Bot mentions come in format like "<@users/1234567890>" or "@CHATBOT" and should be removed
     // Handle both HTML-style mentions and plain text mentions
     let messageText = message.text
       .replace(/<@[^>]+>/g, '')  // Remove HTML-style mentions like <@users/123>
-      .replace(/@[^\s]+\s*/g, '') // Remove plain text mentions like @EIP-CHAT
+      .replace(/@[^\s]+\s*/g, '') // Remove plain text mentions like @CHATBOT
       .trim();
     
     console.log('onMessage: Cleaned message text:', messageText);
@@ -285,7 +285,7 @@ function onAppCommand(event) {
     // Handle both HTML-style mentions and plain text mentions
     let messageText = String(rawText || '')
       .replace(/<@[^>]+>/g, '')  // Remove HTML-style mentions like <@users/123>
-      .replace(/@[^\s]+\s*/g, '') // Remove plain text mentions like @EIP-CHAT
+      .replace(/@[^\s]+\s*/g, '') // Remove plain text mentions like @CHATBOT
       .trim();
     
     console.log('onAppCommand: Cleaned message text:', messageText);
@@ -1038,7 +1038,7 @@ function buildAzureSearchDataSource() {
     };
   }
   
-  // Get search common settings (matching Python eipchatbot implementation)
+  // Get search common settings (matching Python chatbot implementation)
   const maxSearchQueries = props.getProperty('SEARCH_MAX_SEARCH_QUERIES');
   const allowPartialResult = props.getProperty('SEARCH_ALLOW_PARTIAL_RESULT') === 'true';
   const includeContextsStr = props.getProperty('SEARCH_INCLUDE_CONTEXTS');

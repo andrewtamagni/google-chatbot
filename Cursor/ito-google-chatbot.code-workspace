@@ -7,10 +7,10 @@
 			"path": "../../apps-script-samples"
 		},
 		{
-			"path": "../../eipchatbot"
+			"path": "../../chatbot"
 		},
 		{
-			"path": "../../eip-ai-search-update"
+			"path": "../../ai-search-update"
 		}
 	],
 	"settings": {

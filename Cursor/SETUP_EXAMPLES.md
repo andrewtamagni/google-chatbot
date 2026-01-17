@@ -5,8 +5,8 @@ This guide will help you set up all reference repositories for your Cursor works
 ## Repositories
 
 1. **Google Apps Script Samples** - [https://github.com/googleworkspace/apps-script-samples](https://github.com/googleworkspace/apps-script-samples)
-2. **EIP Chatbot** - [https://github.com/yourorg/eipchatbot](https://github.com/yourorg/eipchatbot)
-3. **EIP AI Search Update** - [https://github.com/andrewtamagni/ai-search-update](https://github.com/andrewtamagni/ai-search-update)
+2. **Chatbot** - [https://github.com/yourorg/chatbot](https://github.com/yourorg/chatbot)
+3. **AI Search Update** - [https://github.com/andrewtamagni/ai-search-update](https://github.com/andrewtamagni/ai-search-update)
 
 ## Option 1: Automated Setup (Recommended)
 
@@ -20,8 +20,8 @@ cd Cursor
 
 This script will clone all three repositories to your parent directory:
 - `apps-script-samples/` - Google Apps Script examples
-- `eipchatbot/` - EIP Azure OpenAI chatbot
-- `eip-ai-search-update/` - EIP AI Search index management
+- `chatbot/` - Azure OpenAI chatbot
+- `ai-search-update/` - AI Search index management
 
 ## Option 2: Manual Setup
 
@@ -36,10 +36,10 @@ cd C:\Users\andrewta\Documents\Github
 # Clone Google's official Apps Script samples repository
 git clone https://github.com/googleworkspace/apps-script-samples.git
 
-# Clone EIP Chatbot repository
-git clone https://github.com/yourorg/eipchatbot.git
+# Clone Chatbot repository
+git clone https://github.com/yourorg/chatbot.git
 
-# Clone EIP AI Search Update repository
+# Clone AI Search Update repository
 git clone https://github.com/andrewtamagni/ai-search-update.git
 ```
 
@@ -52,14 +52,14 @@ git clone https://github.com/andrewtamagni/ai-search-update.git
 - **Triggers**, **Templates**, **Advanced Services**
 - And many more Google Workspace APIs
 
-**eipchatbot** contains:
+**chatbot** contains:
 - Azure OpenAI integration patterns
 - Chat interface and conversation handling
 - Azure AI Search integration for RAG
 - CosmosDB for chat history
 - Frontend/backend architecture examples
 
-**eip-ai-search-update** contains:
+**ai-search-update** contains:
 - Azure AI Search index management
 - Content processing and indexing workflows
 - PII detection and redaction patterns
@@ -82,8 +82,8 @@ git clone https://github.com/andrewtamagni/ai-search-update.git
 - Use `@` mentions in Cursor chat to reference files from any repository
 - Examples:
   - `@apps-script-samples/chat/filename.js explain this code`
-  - `@eipchatbot/app.py show me the Azure OpenAI integration`
-  - `@eip-ai-search-update/aiIndexUpdate_V2.py how does PII detection work?`
+  - `@chatbot/app.py show me the Azure OpenAI integration`
+  - `@ai-search-update/aiIndexUpdate_V2.py how does PII detection work?`
 - The AI will have context from all repositories in your workspace
 
 ## Option 3: Create a Reference Directory
@@ -126,8 +126,8 @@ This will clone all three repositories automatically.
 
 ✅ Repositories should be cloned to:
    - `C:\Users\andrewta\Documents\Github\apps-script-samples`
-   - `C:\Users\andrewta\Documents\Github\eipchatbot`
-   - `C:\Users\andrewta\Documents\Github\eip-ai-search-update`
+   - `C:\Users\andrewta\Documents\Github\chatbot`
+   - `C:\Users\andrewta\Documents\Github\ai-search-update`
 
 ### Next Steps:
 
@@ -143,8 +143,8 @@ This will clone all three repositories automatically.
 
 3. **Using Repositories in Agent**:
    - Type `@apps-script-samples/chat/` and see available Chat examples
-   - Type `@eipchatbot/` to reference EIP chatbot patterns
-   - Type `@eip-ai-search-update/` to reference search index patterns
+   - Type `@chatbot/` to reference chatbot patterns
+   - Type `@ai-search-update/` to reference search index patterns
    - Ask questions like: "How does the Chat example handle onMessage events?"
    - Reference specific files: "Compare my onMessage handler with @apps-script-samples/chat/"
 
@@ -159,7 +159,7 @@ Based on your project (Google Chat bot with Gemini AI & Drive), these directorie
 - **`templates/`** - Project templates and frameworks
 - **`advanced/`** - Advanced services usage
 
-### eipchatbot/
+### chatbot/
 Key files and directories:
 
 - **`app.py`** - Main Flask/Quart application with Azure OpenAI integration
@@ -168,7 +168,7 @@ Key files and directories:
 - **`backend/history/`** - CosmosDB chat history implementation
 - **`backend/settings/`** - Configuration management
 
-### eip-ai-search-update/
+### ai-search-update/
 Key files:
 
 - **`aiIndexUpdate_V2.py`** - Main script for updating Azure AI Search indexes
@@ -193,14 +193,14 @@ Once all repositories are in your workspace:
 1. **Enable Agent Mode**: Press `Ctrl+I` and select "Agent" mode
 2. **Reference Files**: Use `@` to mention specific files from any repository
    - `@apps-script-samples/chat/on-message.js`
-   - `@eipchatbot/app.py`
-   - `@eip-ai-search-update/aiIndexUpdate_V2.py`
+   - `@chatbot/app.py`
+   - `@ai-search-update/aiIndexUpdate_V2.py`
 3. **Ask Questions**: 
    - "How does the example in `@apps-script-samples/chat/` handle message events?"
-   - "Show me how `@eipchatbot` integrates with Azure OpenAI"
-   - "How does `@eip-ai-search-update` handle PII detection?"
+   - "Show me how `@chatbot` integrates with Azure OpenAI"
+   - "How does `@ai-search-update` handle PII detection?"
 4. **Compare Code**: Ask Cursor to compare your implementation with examples from any repository
-5. **Cross-Reference**: Ask questions that span multiple repos, like "How do both eipchatbot and my project handle AI responses?"
+5. **Cross-Reference**: Ask questions that span multiple repos, like "How do both chatbot and my project handle AI responses?"
 
 ## Best Practices
 

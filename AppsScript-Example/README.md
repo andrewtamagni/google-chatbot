@@ -61,7 +61,7 @@ This will open a browser window for you to sign in with your Google account.
 ### Step 4: Create Apps Script Project
 
 ```bash
-clasp create --title "EIP Chatbot" --type standalone
+clasp create --title "Chatbot" --type standalone
 ```
 
 This will:

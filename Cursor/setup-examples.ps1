@@ -4,8 +4,8 @@
 Write-Host "Setting up Reference Repositories..." -ForegroundColor Cyan
 Write-Host "This script will check for and clone three repositories:" -ForegroundColor Cyan
 Write-Host "  1. Google Apps Script Samples" -ForegroundColor White
-Write-Host "  2. EIP Chatbot" -ForegroundColor White
-Write-Host "  3. EIP AI Search Update" -ForegroundColor White
+Write-Host "  2. Chatbot" -ForegroundColor White
+Write-Host "  3. AI Search Update" -ForegroundColor White
 
 # Get the parent directory (where repos should be located)
 # Since this script is in Cursor/, we need to go up two levels to get to the Github directory
@@ -21,14 +21,14 @@ $repos = @(
         Description = "Google Apps Script Examples"
     },
     @{
-        Name = "eipchatbot"
-        Url = "https://github.com/yourorg/eipchatbot.git"
-        Description = "EIP Chatbot - Azure OpenAI Chatbot"
+        Name = "chatbot"
+        Url = "https://github.com/yourorg/chatbot.git"
+        Description = "Chatbot - Azure OpenAI Chatbot"
     },
     @{
-        Name = "eip-ai-search-update"
+        Name = "ai-search-update"
         Url = "https://github.com/andrewtamagni/ai-search-update.git"
-        Description = "EIP AI Search Update - Index Management"
+        Description = "AI Search Update - Index Management"
     }
 )
 
@@ -157,8 +157,8 @@ Write-Host "`n💡 Using in Cursor Agent:" -ForegroundColor Yellow
 Write-Host "- Press Ctrl+I to open Agent mode" -ForegroundColor White
 Write-Host "- Use @ mentions like:" -ForegroundColor White
 Write-Host "  • @apps-script-samples/chat/your-file.js" -ForegroundColor Gray
-Write-Host "  • @eipchatbot/app.py" -ForegroundColor Gray
-Write-Host "  • @eip-ai-search-update/aiIndexUpdate_V2.py" -ForegroundColor Gray
+Write-Host "  • @chatbot/app.py" -ForegroundColor Gray
+Write-Host "  • @ai-search-update/aiIndexUpdate_V2.py" -ForegroundColor Gray
 Write-Host "- Reference examples: 'How does the Chat example handle onMessage?'" -ForegroundColor White
 
 Write-Host "`n✨ Setup complete!" -ForegroundColor Green
