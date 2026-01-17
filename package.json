@@ -1,0 +1,26 @@
+{
+  "name": "ito-google-chatbot",
+  "version": "1.0.0",
+  "description": "Google Chat Bot with Multiple AI Providers - Cloud Run Version",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "functions-framework --target=google-chat-bot --port=8080"
+  },
+  "keywords": [
+    "google-chat",
+    "ai",
+    "gemini",
+    "azure-openai",
+    "cloud-run"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.0",
+    "google-auth-library": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

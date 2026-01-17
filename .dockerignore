@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log
+.env
+.env.local
+env.js
+.git
+.gitignore
+*.md
+cloudrun/
+pulumi/
+terraform/
+scripts/
+appsscript.json
+Code.js
+*.code-workspace
+

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../apps-script-samples"
+		},
+		{
+			"path": "../../eipchatbot"
+		},
+		{
+			"path": "../../eip-ai-search-update"
+		}
+	],
+	"settings": {
+		"powershell.cwd": "ito-google-chatbot"
+	}
+}

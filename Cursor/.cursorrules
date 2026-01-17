@@ -1,0 +1,59 @@
+# Cursor Rules for Google Apps Script Development
+
+## Project Context
+This is a Google Apps Script project for a Google Chat bot with Gemini AI integration and Drive search capabilities.
+
+## Reference Material
+
+### Google Apps Script Samples
+The Google Apps Script samples repository is available in the workspace at `apps-script-samples/`.
+Key directories of interest:
+- `apps-script-samples/chat/` - Google Chat bot examples (most relevant)
+- `apps-script-samples/drive/` - Google Drive API examples
+- `apps-script-samples/triggers/` - Trigger examples (onMessage, onEdit, etc.)
+- `apps-script-samples/templates/` - Project templates and frameworks
+- `apps-script-samples/advanced/` - Advanced services usage
+
+### Related EIP Projects
+The workspace includes related EIP chatbot projects for reference:
+
+**eipchatbot/** - Azure OpenAI chatbot webapp (Python/Quart)
+- Azure OpenAI integration patterns
+- Chat interface and conversation handling
+- Azure AI Search integration for RAG (Retrieval Augmented Generation)
+- CosmosDB for chat history storage
+- Authentication and security patterns
+- Frontend/backend architecture examples
+- Useful for understanding: AI chat patterns, conversation flow, search integration
+
+**eip-ai-search-update/** - Azure AI Search index update automation (Python)
+- Azure AI Search index management
+- Content processing and indexing workflows
+- PII detection and redaction patterns
+- Azure Blob Storage integration
+- GitHub repository integration
+- Useful for understanding: Search index structure, content processing, automation patterns
+
+## Code Style
+- Use Google Apps Script V8 runtime (already configured)
+- Follow Apps Script best practices from Google's documentation
+- Use JSDoc comments for functions
+- Handle errors gracefully with try/catch blocks
+- Use console.log() for debugging (viewable in Apps Script execution logs)
+
+## Common Patterns
+When implementing features:
+1. Check `apps-script-samples/` for similar examples first
+2. Reference Google's official Apps Script documentation
+3. Use the existing code patterns in this project for consistency
+4. Consider patterns from `eipchatbot/` for AI integration concepts (though adapted for Apps Script)
+5. Reference `eip-ai-search-update/` for understanding search/indexing concepts if adding search features
+
+## Notes
+- API keys are stored in Script Properties (never hardcoded)
+- Use hostAppDataAction format for Google Workspace Add-on responses
+- Support both slash commands and plain text commands
+- Handle multiple event types (onMessage, onAppCommand, onAddedToSpace, etc.)
+- This project uses Google Gemini AI (different from eipchatbot which uses Azure OpenAI)
+- Drive file attachments are handled natively by Google Chat (not via code commands)
+

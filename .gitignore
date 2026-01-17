@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+env.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Google Apps Script
+.clasp.json
+.clasprc.json
+
+# Pulumi
+.pulumi/
+pulumi/*.yaml
+!pulumi/Pulumi.yaml
+!pulumi/Pulumi.*.yaml.example
+pulumi/__pycache__/
+
+# Logs
+*.log
+logs/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Cloud Run
+.gcloudignore
+
+# Secrets
+secrets/
+*.pem
+*.key
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
